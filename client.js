@@ -33,6 +33,16 @@ const employees = [
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
+function pay(employees) {
+
+  if (employees.reviewRating > 2) {
+    return "will recieve bonus";
+  } else if (employees.reviewRating <= 2) {
+    return "will not recieve bonus";
+  }// end conditional
+}
+  console.log(employees.reviewRating);
+//end pay
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
 // This problem is massive! Break the problem down. Use the debugger.
 // What is the fewest lines of code I can write and test to get just a little closer?
@@ -40,4 +50,6 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+//console.log( employees );
+//console.log(pay(employees));
+console.log(pay('Atticus', 3));
