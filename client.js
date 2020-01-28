@@ -33,25 +33,26 @@ const employees = [
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
-function pay(employees) {
-  for (i = 0; i < employees.length; i++) {
+function pay(array) {
+  for (i = 0; i < array.length; i++) {
     const employee = employees[i];
     if (employee.reviewRating < 2) {
-     return bonusPercentage = 0;
+     bonusPercentage == 0;
     
-    } else if (employee.reviewRating = 3) {
-      return bonusPercentage = .04;
-    } else if (employee.reviewRating = 4) {
-      return bonusPercentage = .06;
-    } else if (employee.reviewRating = 5){
-      return bonusPercentage = .10;
+    } else if (employee.reviewRating == 3) {
+      bonusPercentage == .04;
+    } else if (employee.reviewRating == 4) {
+      bonusPercentage == .06;
+    } else if (employee.reviewRating == 5){
+      bonusPercentage == .10;
   
 
-    } else if (employee.annualSalary > 65,000){
-      return bonusPercentage - .01;
+    } if (employee.annualSalary > 65,000){
+      bonusPercentage - .01;
     
     }// end conditional
   }//end for of
+  console.log(pay(employees[i]));
 }//end pay
   //console.log(employees.reviewRating);
 //end pay
@@ -64,5 +65,5 @@ function pay(employees) {
 
 //console.log( employees );
 //console.log(pay(employees));
-console.log(pay(employees));
+
 //console.log(bonusPercentage[i]);
