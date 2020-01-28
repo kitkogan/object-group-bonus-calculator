@@ -45,7 +45,11 @@ function pay(employees) {
       return bonusPercentage = .06;
     } else if (employee.reviewRating = 5){
       return bonusPercentage = .10;
+  
 
+    } else if (employee.annualSalary > 65,000){
+      return bonusPercentage - .01;
+    
     }// end conditional
   }//end for of
 }//end pay
