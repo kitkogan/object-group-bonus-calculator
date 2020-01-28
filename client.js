@@ -34,13 +34,14 @@ const employees = [
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 function pay(employees) {
-
-  if (employees.reviewRating > 2) {
-    return "will recieve bonus";
-  } else if (employees.reviewRating <= 2) {
-    return "will not recieve bonus";
-  }// end conditional
-}
+  for (employee of employees) {
+    if (employee.reviewRating > 2) {
+      return "will recieve bonus";
+    } else if (employee.reviewRating <= 2) {
+     return "will not recieve bonus";
+    }// end conditional
+  }//end for of
+}//end pay
   console.log(employees.reviewRating);
 //end pay
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
