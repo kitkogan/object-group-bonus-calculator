@@ -117,7 +117,7 @@ function bonusCalculator(employee) {
   }// end if 4
 
   newObject.totalBonus = Number(employee.annualSalary) * newObject.bonusPercentage;
-  newObject.totalCompensation = Number(employees.annualSalary) + newObject.totalBonus;
+  newObject.totalCompensation = Number(employee.annualSalary) + newObject.totalBonus;
 
   console.log('final object', newObject);
 
